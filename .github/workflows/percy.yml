@@ -3,7 +3,7 @@ on:
     branches:
       - main
 jobs:
-  name: Percy workflow
+  name: Percy
   build:
     runs-on: ubuntu-latest
     steps:
