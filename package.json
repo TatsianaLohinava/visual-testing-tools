@@ -17,7 +17,9 @@
     "react-dom": "latest"
   },
   "devDependencies": {
+    "@chromatic-com/cypress": "^0.6.12",
     "@vitejs/plugin-react": "latest",
+    "chromatic": "^11.5.4",
     "cypress": "^13.11.0",
     "vite": "latest"
   }
