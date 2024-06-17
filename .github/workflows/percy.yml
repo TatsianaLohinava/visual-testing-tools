@@ -11,6 +11,10 @@ jobs:
         node-version: 18
     - run: npm ci
     - run: npm install --save-dev @percy/cli @percy/cypress
+    - name: Cypress run
+      uses: cypress-io/github-action@v6
+      with:
+        start: npm run dev
     - run: npx percy exec -- cypress run
       env:
         PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
