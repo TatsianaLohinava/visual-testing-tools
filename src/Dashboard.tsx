@@ -154,6 +154,7 @@ export default function Dashboard() {
           </List>
         </Drawer>
         <Box
+          data-happo-hide=""
           component="main"
           sx={{
             backgroundColor: (theme) =>
