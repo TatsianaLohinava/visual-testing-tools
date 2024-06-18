@@ -1,12 +1,9 @@
 name: Cypress with Happo workflow
 
 on:
-  push:
-    branches:
-      - main
   pull_request:
     branches:
-      - main
+      - happo
 
 jobs:
   cypress:

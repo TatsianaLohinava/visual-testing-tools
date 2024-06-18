@@ -125,7 +125,7 @@ export default function Dashboard() {
               sx={{ flexGrow: 1 }}
               data-happo-hide=""
             >
-              My Pink Dashboard
+              My Lovely Pink Dashboard
             </Typography>
             <IconButton color="inherit">
               <Badge badgeContent={4} color="secondary">
@@ -157,10 +157,7 @@ export default function Dashboard() {
         <Box
           component="main"
           sx={{
-            backgroundColor: (theme) =>
-              theme.palette.mode === 'light'
-                ? theme.palette.grey[100]
-                : theme.palette.grey[900],
+            backgroundColor: 'blue',
             flexGrow: 1,
             height: '100vh',
             overflow: 'auto',
