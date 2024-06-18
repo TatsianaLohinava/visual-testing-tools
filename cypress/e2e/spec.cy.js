@@ -4,5 +4,9 @@ describe('template spec', () => {
     cy.get('header').happoScreenshot()
     cy.get('h1').happoScreenshot()
     cy.get('main').happoScreenshot()
+    cy.happoHideDynamicElements({
+      defaultSelectors: [],
+      selectors: ['h2'],
+    });
   })
 })

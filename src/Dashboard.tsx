@@ -123,6 +123,7 @@ export default function Dashboard() {
               color="inherit"
               noWrap
               sx={{ flexGrow: 1 }}
+              data-happo-hide=""
             >
               My Pink Dashboard
             </Typography>
@@ -154,7 +155,6 @@ export default function Dashboard() {
           </List>
         </Drawer>
         <Box
-          data-happo-hide=""
           component="main"
           sx={{
             backgroundColor: (theme) =>
