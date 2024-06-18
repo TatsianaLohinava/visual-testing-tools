@@ -5,7 +5,7 @@ module.exports = {
     apiSecret: process.env.HAPPO_API_SECRET,
 
     targets: {
-        'chrome-desktop': new RemoteBrowserTarget('chrome-desktop', {
+        'chrome-desktop': new RemoteBrowserTarget('chrome', {
             viewport: '1024x768',
             hideBehavior: 'ignore',
         }),
