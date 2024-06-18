@@ -21,7 +21,7 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
           start: npm run dev
-          command-prefix: happo-e2e -- npx
+          command-prefix: happo-e2e --port 5173 -- npx
         env:
           # Inject secrets to the build
           HAPPO_API_KEY: ${{ secrets.HAPPO_API_KEY }}
