@@ -1,5 +1,5 @@
 import Dashboard from "../../src/Dashboard"
-import {heading} from "../fixtures/data.json"
+import { heading } from "../fixtures/data.json"
 
 describe('Dashboard.cy.jsx', () => {
   it('has dashboard heading', () => {

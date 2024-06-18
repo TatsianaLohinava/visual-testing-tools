@@ -19,6 +19,9 @@
   "devDependencies": {
     "@vitejs/plugin-react": "latest",
     "cypress": "^13.11.0",
+    "happo-cypress": "^4.2.0",
+    "happo-e2e": "^2.6.0",
+    "happo.io": "^9.1.6",
     "vite": "latest"
   }
 }

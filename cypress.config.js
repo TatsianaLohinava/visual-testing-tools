@@ -1,11 +1,13 @@
-const { defineConfig } = require("cypress");
+const { defineConfig } = require('cypress');
+const happoTask = require('happo-cypress/task');
 
 module.exports = defineConfig({
   viewportWidth: 1000,
   viewportHeight: 660,
   e2e: {
     setupNodeEvents(on, config) {
-      // implement node event listeners here
+      happoTask.register(on);
+      return config;
     },
   },
 

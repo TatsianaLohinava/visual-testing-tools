@@ -102,6 +102,7 @@ export default function Dashboard() {
           <Toolbar
             sx={{
               pr: '24px', // keep right padding when drawer closed
+              backgroundColor: 'pink'
             }}
           >
             <IconButton
@@ -122,8 +123,9 @@ export default function Dashboard() {
               color="inherit"
               noWrap
               sx={{ flexGrow: 1 }}
+              data-happo-hide=""
             >
-              Dashboard
+              My Pink Dashboard
             </Typography>
             <IconButton color="inherit">
               <Badge badgeContent={4} color="secondary">
