@@ -1,0 +1,20 @@
+name: Percy
+on:
+  push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-node@v4
+      with:
+        node-version: 18
+    - run: npm ci
+    - run: npm install --save-dev @percy/cli @percy/cypress
+    - name: Cypress run
+      uses: cypress-io/github-action@v6
+      with:
+        start: npm run dev
+        command-prefix: 'percy exec -- npx'
+      env:
+        PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
