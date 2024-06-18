@@ -20,6 +20,7 @@ jobs:
       - name: Run cypress
         uses: cypress-io/github-action@v6
         with:
+          start: npm run dev
           command-prefix: npx happo-e2e -- npx
         env:
           # Inject secrets to the build
