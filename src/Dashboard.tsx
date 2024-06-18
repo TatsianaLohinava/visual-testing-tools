@@ -123,8 +123,9 @@ export default function Dashboard() {
               color="inherit"
               noWrap
               sx={{ flexGrow: 1 }}
+              data-happo-hide=""
             >
-              My Dashboard
+              My Lovely Dashboard
             </Typography>
             <IconButton color="inherit">
               <Badge badgeContent={4} color="secondary">
