@@ -125,7 +125,7 @@ export default function Dashboard() {
               sx={{ flexGrow: 1 }}
               data-happo-hide=""
             >
-              My Lovely Dashboard
+              My Lovely Pink Dashboard
             </Typography>
             <IconButton color="inherit">
               <Badge badgeContent={4} color="secondary">
