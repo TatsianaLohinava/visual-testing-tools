@@ -17,6 +17,7 @@
     "react-dom": "latest"
   },
   "devDependencies": {
+    "@applitools/eyes-cypress": "^3.44.4",
     "@vitejs/plugin-react": "latest",
     "cypress": "^13.11.0",
     "vite": "latest"
