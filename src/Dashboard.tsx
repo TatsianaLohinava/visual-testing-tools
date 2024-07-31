@@ -141,7 +141,7 @@ export default function Dashboard() {
             px: [1],
           }}
         >
-          <IconButton onClick={toggleDrawer}>
+          <IconButton onClick={toggleDrawer} aria-label="close drawer">
             <ChevronLeftIcon />
           </IconButton>
         </Toolbar>
