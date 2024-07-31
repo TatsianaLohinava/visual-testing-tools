@@ -28,10 +28,15 @@ describe('Dashboard', () => {
     cy.visit('http://localhost:5173/')
     //assertion to check if the page is rendered
     cy.eyesCheckWindow({
-      tag: "Dashboard page",
+      tag: "Dashboard page open drawer",
       // matchLevel: 'Ignore Colors'
     });
     cy.get('[aria-label="close drawer"]').click()
+    cy.eyesCheckWindow({
+      tag: "Dashboard page close drawer",
+      matchLevel: 'Ignore Colors'
+    });
+    cy.get('[aria-label="open drawer"]').click()
   })
 
 })
