@@ -4,6 +4,6 @@ describe('template spec', () => {
     cy.takeSnapshot()
     cy.get('[aria-label="close drawer"]').click()
     cy.takeSnapshot()
-    cy.get('[aria-label="close drawer"]').click()
+    cy.get('[aria-label="open drawer"]').click()
   })
 })
