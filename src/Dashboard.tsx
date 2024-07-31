@@ -40,7 +40,7 @@ function Copyright(props: any) {
   );
 }
 
-const drawerWidth: number = 240;
+const drawerWidth: number = 210;
 
 interface AppBarProps extends MuiAppBarProps {
   open?: boolean;
@@ -141,7 +141,7 @@ export default function Dashboard() {
             px: [1],
           }}
         >
-          <IconButton onClick={toggleDrawer}>
+          <IconButton onClick={toggleDrawer} aria-label="close drawer">
             <ChevronLeftIcon />
           </IconButton>
         </Toolbar>
