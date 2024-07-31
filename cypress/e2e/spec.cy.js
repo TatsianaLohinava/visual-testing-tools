@@ -31,6 +31,7 @@ describe('Dashboard', () => {
       tag: "Dashboard page",
       // matchLevel: 'Ignore Colors'
     });
+    cy.get('[aria-label="close drawer"]').click()
   })
 
 })
