@@ -114,7 +114,7 @@ export default function Dashboard() {
               ...(open && { display: "none" }),
             }}
           >
-            <ChevronLeftIcon />
+            <MenuIcon />
           </IconButton>
           <Typography
             component="h1"
