@@ -1,21 +1,8 @@
 describe('Dashboard', () => {
-  before(() => {
-    
-  })
   beforeEach(() => {
     cy.eyesOpen({
       appName: 'Dashboard',
-      testName: 'visits page',
-      browser: [
-        {width: 800, height: 600, name: 'firefox'},
-        {width: 1024, height: 768, name: 'chrome'},
-        {width: 1024, height: 768, name: 'ie11'},
-        {
-          deviceName: 'iPhone X',
-          screenOrientation: 'portrait',
-          name: 'chrome' // optional, just to make it explicit this is browser emulation and not a real device. Only chrome is supported for device emulation.
-        }
-      ]
+      testName: 'visits page'
     })
   })
 
@@ -25,7 +12,7 @@ describe('Dashboard', () => {
   })
 
   it('visits page', () => {
-    cy.visit('http://localhost:5173/')
+    cy.visit('/')
     //assertion to check if the page is rendered
     cy.eyesCheckWindow({
       tag: "Dashboard page open drawer",
