@@ -62,7 +62,7 @@ function preventDefault(event: React.MouseEvent) {
 export default function Orders() {
   return (
     <React.Fragment>
-      <Title>Latest Orders</Title>
+      <Title>Recent Orders</Title>
       <Table size="small">
         <TableHead>
           <TableRow>
