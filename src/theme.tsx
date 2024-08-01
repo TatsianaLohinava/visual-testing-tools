@@ -16,7 +16,7 @@ const theme = createTheme({
   },
   typography: {
     h6: {
-      fontSize: 19,
+      fontSize: 20,
     },
   },
 });

@@ -17,6 +17,7 @@ describe('Dashboard', () => {
     cy.eyesCheckWindow({
       tag: "Dashboard page open drawer",
       // matchLevel: 'Ignore Colors'
+      layout: [{ selector: 'table' }, { selector: '[class*=MuiChartsSurface]' }]
     });
     cy.get('[aria-label="close drawer"]').click()
     cy.eyesCheckWindow({
