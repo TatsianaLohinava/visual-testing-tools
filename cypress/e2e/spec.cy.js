@@ -22,7 +22,7 @@ describe('Dashboard', () => {
     cy.get('[aria-label="close drawer"]').click()
     cy.eyesCheckWindow({
       tag: "Dashboard page close drawer",
-      matchLevel: 'IgnoreColors'
+      matchLevel: 'Exact'
     });
     cy.get('[aria-label="open drawer"]').click()
   })
