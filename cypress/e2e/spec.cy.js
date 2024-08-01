@@ -8,5 +8,6 @@ describe('template spec', () => {
       defaultSelectors: [],
       selectors: ['h2'],
     });
+    cy.get('[aria-label="close drawer"]').click()
   })
 })
