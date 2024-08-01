@@ -1,13 +1,14 @@
 const { defineConfig } = require("cypress");
+const eyesPlugin = require('@applitools/eyes-cypress')
 
-module.exports = defineConfig({
+module.exports = eyesPlugin(defineConfig({
   viewportWidth: 1000,
   viewportHeight: 660,
   e2e: {
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
-    baseUrl: 'http://localhost:5173/'
+    baseUrl: 'http://localhost:5173'
   },
 
   component: {
@@ -16,7 +17,5 @@ module.exports = defineConfig({
       bundler: "vite",
     },
   },
-});
+}));
 
-
-require('@applitools/eyes-cypress')(module);
