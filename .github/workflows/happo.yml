@@ -1,0 +1,28 @@
+name: Cypress with Happo workflow
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  cypress:
+    name: Cypress with Happo
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run cypress
+        uses: cypress-io/github-action@v6
+        with:
+          start: npm run dev
+          command-prefix: happo-e2e -- npx
+        env:
+          # Inject secrets to the build
+          HAPPO_API_KEY: ${{ secrets.HAPPO_API_KEY }}
+          HAPPO_API_SECRET: ${{ secrets.HAPPO_API_SECRET }}
